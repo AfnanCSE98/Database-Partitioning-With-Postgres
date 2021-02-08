@@ -29,7 +29,7 @@ We are going to
 * create a table and Insert 10 million rows
 * Create partitions
 
-First, run the following command from your CMD/WSL if you're in windows or from shell in case of linux
+First, run the following command from your CMD/WSL if you're in windows or from shell in case of linux.You must have docker desktop installed
 
 ```
 docker run --name pgmain -d -e POSTGRES_PASSWORD=postgres postgres

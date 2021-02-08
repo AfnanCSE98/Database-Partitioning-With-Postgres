@@ -35,7 +35,7 @@ First, run the following command from your CMD/WSL if you're in windows or from 
 docker run --name pgmain -d -e POSTGRES_PASSWORD=postgres postgres
 ```
 
-It will start a postgres instance.
+It will spin up a postgres instance.
 
 ![](Images/1.PNG)
 

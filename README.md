@@ -89,3 +89,16 @@ If it is set off,any query will hit all the indexes instead of a single index.Le
 
 ![](epp2.PNG)
 
+So this was fun!
+
+Lastly,I'd like to talk about pros and cons of partitioning.Nothing comes all the way with ease.You have to trade-off as  always
+### Pros
+* Improves query performance when accessing a single partition
+* Archive old data that are barely accessed into cheap storage
+### Cons
+* Updates that move rows from a partition to another (slow or fail sometimes)
+* Inefficient queries could accidently scan all partitions resulting in slower performance
+* Schema changes can be challenging (DBMS could manage it though)
+
+A big thanks to [Hussein Nasser](https://github.com/hnasr) for the contents and resources.
+
